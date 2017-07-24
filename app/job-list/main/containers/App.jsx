@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 
 import JobList from '../components/JobList';
 
-import styles from '../styles/index.scss';
+import styles from '../styles/app.scss';
 
 const mockData = [
   {

@@ -53,6 +53,12 @@ class JobList extends Component {
     });
   }
 
+  _onCollapse() {
+    this.setState({
+      isCollapse: !this.state.isCollapse,
+    });
+  }
+
   _renderJobListItem(jobs) {
     return jobs.map((job, index) => {
       return (
@@ -67,12 +73,6 @@ class JobList extends Component {
     });
   }
 
-  _onCollapse() {
-    this.setState({
-      isCollapse: !this.state.isCollapse,
-    });
-  }
-
   render() {
     return (
       <div className={styles.job_list}>
@@ -84,8 +84,13 @@ class JobList extends Component {
               {this.props.department}
             </span>
           </CheckBox>
-          <span className={this.state.isCollapse ? styles.arrow_up : styles.arrow_down} onClick={() => this._onCollapse()}></span>
-          <span className={styles.count}>{this.totalJob()}</span>
+          <span
+            className={this.state.isCollapse ? styles.arrow_up : styles.arrow_down}
+            onClick={() => this._onCollapse()}>
+          </span>
+          <span className={styles.count}>
+            {this.totalJob()}
+          </span>
         </header>
         {this.state.isCollapse
           ? null

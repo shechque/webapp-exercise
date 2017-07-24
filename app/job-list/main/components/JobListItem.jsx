@@ -5,17 +5,20 @@ import styles from '../styles/job_list_item.scss';
 class JobListItem extends Component {
 
   render() {
+
+    const { checked, title, count, onChange } = this.props;
+
     return (
       <CheckBox
         className={styles.job_list_item}
-        checked={this.props.checked}
-        onChange={this.props.onChange}>
-            <span className={styles.title}>
-                {this.props.title}
-            </span>
-            <span className={styles.count}>
-                {this.props.count}
-            </span>
+        checked={checked}
+        onChange={onChange}>
+        <span className={styles.title}>
+          {title}
+        </span>
+        <span className={styles.count}>
+          {count}
+        </span>
       </CheckBox>
     );
   }

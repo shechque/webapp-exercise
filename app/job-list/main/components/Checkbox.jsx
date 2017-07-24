@@ -30,8 +30,8 @@ class Checkbox extends Component {
         <input
           className={styles.checkbox}
           name={this.props.name}
-          onChange={() => this._onChange()}
           checked={this.props.checked}
+          onChange={() => this._onChange()}
           type="checkbox" />
         {this.props.children}
       </label>
