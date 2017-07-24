@@ -30,7 +30,7 @@
   }
 
   &:checked {
-    &:before {
+    &::before {
       height: 0.5rem;
       border-top-style: none;
       border-right-style: none;
@@ -39,7 +39,7 @@
     }
   }
 
-  &:after {
+  &::after {
     position: absolute;
     top: rem(-2);
     left: 0;
