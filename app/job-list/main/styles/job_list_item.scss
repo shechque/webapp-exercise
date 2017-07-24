@@ -1,0 +1,16 @@
+@import './variables';
+
+.job_list_item {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  color: lighten($deepBlue, 30%);
+  font-size: 24px;
+
+  .title {
+    margin-left: 8px;
+  }
+
+  .count {
+    float: right;
+  }
+}

@@ -1,0 +1,30 @@
+@import './variables';
+
+ul,
+li {
+  list-style: none;
+}
+
+.job_list {
+  width: 600px;
+  padding: 10px 20px;
+  background-color: $deepBlue;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title {
+    color: lighten($deepBlue, 30%);
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .clear_btn {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
